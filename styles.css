@@ -1,0 +1,132 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+} 
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* margin-left: 5vw;
+    margin-right: 5vw; maybe put margins if page gets too wide */
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+#root, #__next {
+    isolation: isolate;
+}
+@font-face {
+    font-family: "norse";
+    src:
+      url("fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.page{
+    display: flex;
+    flex-direction: row;
+}
+
+.panel{
+    position: relative;
+}
+
+.left{
+    height: 100vh;
+    width: 35vw;
+}
+
+#background{
+   height: 100%;
+   width: 100%;
+}
+
+#logo{
+    height: 125px;
+}
+
+.logo-panel{
+    position: absolute;
+    top: 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font: 2.5rem "norse";
+    width: 100%;
+}
+
+/* how to center this in div possibly put into div*/
+.credits{
+    position: absolute; 
+    right: 8vw;
+    bottom: 0px;
+    font: 16px sans-serif;
+    color: white;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+}
+
+.right>p{
+    padding: 0 5vw;
+}
+
+form{
+    background-color: white;
+    padding: 3vh 5vw;
+    margin: 6vh 0vw 0vh;
+    box-shadow: 2px 0px 10px 0px rgb(192, 191, 191);
+}
+
+.overall-form{
+    display: flex;
+    flex-direction: row;
+}
+.left-form > p{
+    margin: 0 0 10px 0;
+}
+
+.overall-form > div > div{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px 0px 0px;
+}
+
+button{
+    background-color: rgb(78, 146, 57);
+    border-radius: 10px;
+    border: none;
+    padding: 1em 3em;
+    margin: 2em 5vw;
+    width: fit-content;
+
+    font: bold 1em sans-serif;
+    color: white;
+}
